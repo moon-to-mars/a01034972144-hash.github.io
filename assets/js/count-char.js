@@ -1,6 +1,6 @@
 // assets/js/count-char.js
 
-const text = "이상의「날개」는 1936년에 발표된 단편소설이다.":
+const text = "이상의「날개」는 1936년에 발표된 단편소설이다.";
 const target = "이";
 
 let count = 0;
