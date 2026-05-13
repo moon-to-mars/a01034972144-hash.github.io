@@ -17,7 +17,7 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
 
     const text = textBox.value;
-    const target = targetBox.value.split(",").map(s => s.trim());
+    const targets = targetBox.value.split(",").map(s => s.trim());
     const counts = targets.map(t => countChar(text, t));
 
      drawList(targets, counts);
