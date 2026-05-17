@@ -13,3 +13,20 @@ themeBtn.addEventListener("click", () => {
     themeBtn.textContent = "다크 모드";
   }
 });
+
+// Q2
+const input = document.querySelector("#q2-input");
+const count = document.querySelector("#q2-count");
+const warn = document.querySelector("#q2-warn");
+
+input.addEventListener("input", (e) => {
+  const len = e.target.value.length;
+  count.textContent = len;
+
+  if (len >= 100) {
+    warn.textContent = "100자를 넘었습니다.";
+    warn.style.color = "crimson";
+  } else {
+    warn.textContent = "";
+  }
+});
