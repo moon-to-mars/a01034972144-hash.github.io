@@ -17,10 +17,7 @@ button.addEventListener("click", () => {
     const counts = countWords(cleaned);
     const top = topN(counts, 20);
 
-    if (resultChart) {
-      resultChart.destroy();
-    }
-
+    if (resultChart) resultChart.destroy();
     resultChart = drawChart(
       "#result-chart",
       top,
