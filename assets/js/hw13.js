@@ -12,6 +12,7 @@ function extractBody(text) {
 function getWords(text) {
   return text
     .toLowerCase()
+    .replace(/--/g, " ")
     .replace(/[.,!?;:'"‘’“”()\[\]_*]/g, " ")
     .split(/\s+/)
     .filter(w => w.length > 0);
